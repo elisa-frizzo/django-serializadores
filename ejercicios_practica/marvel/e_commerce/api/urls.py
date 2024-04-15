@@ -29,5 +29,5 @@ urlpatterns = [
     path('users/list/', UserListAPIView.as_view(), name='user_class_list_api_view'),
     path('users/<str:username>/', UserRetrieveAPIView.as_view(), name='user_class_retrieve_api_view'),
     # TODO: Wish-list Class API View.
-    path('whish/list-create/', WhishListApiView.as_view(), name='whishlist_class_list_api_view'),
+    path('whish/list-create/', WishListAPIView.as_view(), name='wishlist_class_api_view')
 ]

@@ -245,9 +245,14 @@ class UserRetrieveAPIView(RetrieveAPIView):
     lookup_field = 'username'
 
 # Class API Views for WhishList
-
-class WhishListAPIView(ListCreateAPIView):    
-    queryset = WishList.objects.all()
+class WishListAPIView(ListCreateAPIView):
+    '''
+    `[METODO GET POST]`
+    Esta vista de API nos devuelve una lista de todos los whislist presentes 
+    en la base de datos.
+    '''
     serializer_class = WishListSerializer
+    queryset = WishList.objects.all()
+
     
    
